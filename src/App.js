@@ -4,7 +4,7 @@ import MovieList from './pages/MovieList';
 import MovieDetails from './pages/MovieDetails';
 import NewMovie from './pages/NewMovie';
 import EditMovie from './pages/EditMovie';
-import NotFound from './pages/NotFound';
+// import NotFound from './pages/NotFound';
 // import { Link, Route, BrowserRouter, Router } from 'react-dom';
 import './App.css';
 import Copyright from './components/Copyright';
@@ -34,7 +34,7 @@ function App() {
             path={ `${process.env.PUBLIC_URL}/movies/:id` }
             component={ MovieDetails }
           />
-          <Route path="*" component={ NotFound } />
+          <Route path="*" component={ MovieList } />
         </Switch>
       </HashRouter>
       <footer className="footer-class text-muted">
