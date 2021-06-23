@@ -155,7 +155,7 @@ class MovieForm extends React.Component {
 
   render() {
     return (
-      <form className="row g-3">
+      <form className="row g-3 card">
         {this.renderTitleInput()}
         {this.renderSubtitleInput()}
         {this.renderImagePathInput()}
