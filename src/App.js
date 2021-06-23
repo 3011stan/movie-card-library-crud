@@ -17,10 +17,23 @@ function App() {
       </header>
       <HashRouter basename={ process.env.PUBLIC_URL }>
         <Switch>
-          <Route path="/movies/:id/edit" component={ EditMovie } />
-          <Route path="/movies/new" component={ NewMovie } />
-          <Route exact path="/" component={ MovieList } />
-          <Route path="/movies/:id" component={ MovieDetails } />
+          <Route
+            path={ `${process.env.PUBLIC_URL}/movies/:id/edit` }
+            component={ EditMovie }
+          />
+          <Route
+            path={ `${process.env.PUBLIC_URL}/movies/new` }
+            component={ NewMovie }
+          />
+          <Route
+            exact
+            path={ `${process.env.PUBLIC_URL}/` }
+            component={ MovieList }
+          />
+          <Route
+            path={ `${process.env.PUBLIC_URL}/movies/:id` }
+            component={ MovieDetails }
+          />
           <Route path="*" component={ NotFound } />
         </Switch>
       </HashRouter>
