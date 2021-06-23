@@ -15,7 +15,7 @@ function App() {
       <header className="container">
         <h1 className="display-2">Movie Card Library CRUD</h1>
       </header>
-      <HashRouter>
+      <HashRouter basename="/movie-card-library-crud">
         <Switch>
           <Route path="/movies/:id/edit" component={ EditMovie } />
           <Route path="/movies/new" component={ NewMovie } />
