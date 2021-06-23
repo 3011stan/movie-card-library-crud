@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const threeSeconds = 3000;
 
-class Copyright extends Component {
+class Copyright extends Component { // pagina q retornarei footer
   constructor() {
     super();
     this.state = {
